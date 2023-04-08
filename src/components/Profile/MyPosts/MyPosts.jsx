@@ -5,15 +5,15 @@ import Post from "./Post/Post";
 const MyPosts = () => {
     return (
     <div>
-            My Posts
+        My Posts
         <div>
-        <textarea></textarea>
-        <button>Add post</button>
-            </div>
+            <textarea></textarea>
+            <button>Add post</button>
+        </div>
             <div className={classes.posts}>
-                <div className={classes.item}>
-                    <Post/>
-                </div>
+                
+                    <Post message='15'/>
+                
             </div>
     </div>
        
