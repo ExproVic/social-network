@@ -11,7 +11,12 @@
 }
 .messages{
     padding: 10px;
+    text-align: right;
 }
 .messages .message{
     
+}
+img{
+    height: 20px;
+    width: 20px;
 }

@@ -17,7 +17,16 @@ const Navbar = () => {
     <div className={classes.item}>
       <NavLink to='/setting' className={navData => navData.isActive ? classes.active : classes.item}>Setting</NavLink>
     </div>
-
+    <div className={classes.BestFriends}> BestFriend
+      <div className={classes.friends}>
+        <NavLink> <img src="https://w7.pngwing.com/pngs/862/646/png-transparent-beard-hipster-male-man-avatars-xmas-giveaway-icon-thumbnail.png" />Vova </NavLink>
+      </div>
+      <div className={classes.friends}>
+        <NavLink>  <img src="https://w7.pngwing.com/pngs/862/646/png-transparent-beard-hipster-male-man-avatars-xmas-giveaway-icon-thumbnail.png" />Antoni</NavLink>
+      </div>
+      <div className={classes.friends}>
+        <NavLink> <img src="https://w7.pngwing.com/pngs/862/646/png-transparent-beard-hipster-male-man-avatars-xmas-giveaway-icon-thumbnail.png" /> Emeli </NavLink>
+      </div></div>
   </nav>
 
 

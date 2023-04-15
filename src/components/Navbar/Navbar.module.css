@@ -9,3 +9,10 @@
 .active {color: rgb(25, 0, 250);
 text-decoration: none;
 }  
+.BestFriends{
+  margin-top: 10px;
+}
+.friends img{
+  height: 15px;
+  width: 15px;
+}
