@@ -1,10 +1,22 @@
 import React from 'react';
 import reportWebVitals from './reportWebVitals';
-import { rerenderEntireTree } from './render';
-import state from './redux/state';
+import state, { subcribe } from './redux/state';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { addPost, updateNewPostText } from './redux/state';
 
+let rerenderEntireTree = (state) => {
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+        <React.StrictMode>
+            <App state={state} addPost={addPost} updateNewPostText={updateNewPostText} />
+        </React.StrictMode>
+    );
+}
 
 rerenderEntireTree(state);
+subcribe(rerenderEntireTree);
 
 
 
