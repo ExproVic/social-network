@@ -7,7 +7,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Setting from './components/Setting/Setting';
-import store from './redux/state';
+
 
 
 const App = (props) => {
