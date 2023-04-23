@@ -7,6 +7,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Setting from './components/Setting/Setting';
+import store from './redux/state';
 
 
 const App = (props) => {
@@ -21,7 +22,9 @@ const App = (props) => {
               profilePage={props.state.profilePage}
               dispatch={props.dispatch}
             />} />
-            <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogsPage} />} />
+            <Route path="/dialogs/*" element={<Dialogs
+              state={props.state.dialogsPage}
+              store={props.store} />} />
             <Route path="/news" element={<News />} />
             <Route path="/setting" element={<Setting />} />
           </Routes>
