@@ -23,21 +23,24 @@ let store = {
 
             ],
             newMessageBody: "yo"
-        }
+        },
+        subcribe(observer) {
+            this._callSubscriber = observer;
+        },
+        getState() {
+            return this._state;
+        },
+        _callSubscriber() {
+            console.log('state changed')
+        },
 
 
 
     },
-    _callSubscriber() {
-        console.log('state changed')
-    },
 
-    getState() {
-        return this._state;
-    },
-    subcribe(observe) {
-        this._callSubscriber = observe;
-    },
+
+
+
 
     addPost() {
         let newPost = {
